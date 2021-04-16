@@ -1,0 +1,60 @@
+body {
+    background-image: url(lale.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+form {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 20px;
+    background-color: #be348954;
+    padding: 1em 3em;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+#text_input {
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+#check {
+    text-align: center;
+}
+
+#inputbox {
+    background-color: transparent;
+    border: none;
+    border-bottom: orchid solid 0.5px;
+    width: 100%;
+    height: 32px;
+}
+
+#signup {
+    text-align: center;
+    padding: 10px 15px;
+    width: 250px;
+    background-color: #c04591;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#signup:hover {
+    cursor: pointer;
+    background-color: #7a2b5c;
+}
