@@ -1,0 +1,243 @@
+
+/* görseller */
+* {
+    box-sizing: border-box;
+    
+  }
+  
+ 
+  /* Center website */
+  .main {
+    margin-left: 10px;
+    max-width: 1000px;
+    margin: 30px;
+    
+    
+  }
+  
+  
+  .row {
+    margin: 8px -16px;
+    
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+.row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+body {
+	background: #FFFFFF url(lale.jpg)   ;
+	background-size: cover;
+    background-attachment: fixed;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #7F7772;
+}
+ 
+h1, h2, h3 {
+	margin-bottom: 15px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #333333;
+}
+ 
+h1 {
+	font-size: 197%;
+    
+    
+}
+ 
+h2 {
+	font-size: 152%;
+}
+ 
+h3 {
+	font-size: 100%;
+	font-weight: bold;
+}
+ 
+p, ul, ol {
+	margin-bottom: 15px;
+	line-height: 1.6em;
+}
+ 
+ul, ol {
+	margin-left: 2em;
+}
+ 
+blockquote {
+	margin-left: 1em;
+	padding-left: 1em;
+	
+	font-style: italic;
+}
+ 
+a:link {
+	color: #0AAAFD;
+}
+ 
+a:hover, a:active {
+	text-decoration: none;
+	color: #bb8bab;
+}
+ 
+a:visited {
+	color: #7F7772;
+}
+ 
+img {
+	border: none;
+}
+ 
+img.left {
+	float: left;
+	margin: 0 20px 0 0;
+}
+ 
+img.right {
+	float: right;
+	margin: 0 0 0 20px;
+}
+ 
+/* Menu */
+ 
+#menu {
+	width: 770px;
+	height: 105px;
+	margin: 0 auto;
+}
+ 
+#menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ 
+#menu li {
+	display: block;
+	float: left;
+	width: 122px;
+	height: 65px;
+	padding: 40px 0 0 0;
+}
+ 
+#menu a {
+	/*üst menu*/
+	display: block;
+	width: 122px;
+	height: 32px;
+	padding: 13px 0 0 0;
+	background: #be3489;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+ 
+#menu a:hover {
+	/*üst menude mousla dokununca degısen renk*/
+	background: #800a58;
+}
+ 
+#menu .active {
+	padding-top: 35px;
+}
+ 
+#menu .active a {
+	/*üst menu anasayfa yazısı ıcın*/
+	height: 37px;
+	padding-top: 16px;
+	background: #be3489;
+	color: #d1dd2a;
+}
+ 
+#menu .active a:hover {
+	/*üst menude mousla dokununca degısen renk anasayyfa yazısı ıcın*/
+	background: #800a58;
+}
+ 
+/* Header */
+ 
+#header {
+	width: 770px;
+	height: 160px;
+	margin: 0 auto;
+}
+ 
+/* Logo */
+ 
+#logo {
+	/* logo kenarları*/
+	float: left;
+	width: 250px;
+	height: 160px;
+	background:  #ffffff;
+	
+}
+ 
+#logo h1, #logo h2 {
+	text-align: center;
+	
+}
+ 
+#logo h1 {
+	/* logo*/
+	padding-top: 80px;
+	background:  url(be.png) no-repeat ;
+	letter-spacing: 5px;
+	font-size: 197%;
+	font-family: "Trebuchet MS";
+}
+ 
+#logo h2 {
+	letter-spacing: 1px;
+	font-size: 85%;
+}
+ 
+#logo a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
