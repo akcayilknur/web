@@ -1,299 +1,325 @@
-
- 
 body {
-	background: #FFFFFF url(lale.jpg)   ;
-	background-size: cover;
+    background: #FFFFFF url(lale.jpg);
+    background-size: cover;
     background-attachment: fixed;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: 13px;
-	color: #7F7772;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #7F7772;
 }
- 
-h1, h2, h3 {
-	margin-bottom: 15px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	font-weight: normal;
-	color: #333333;
-}
- 
-h1 {
-	font-size: 197%;
-}
- 
-h2 {
-	font-size: 152%;
-}
- 
+
+h1,
+h2,
 h3 {
-	font-size: 100%;
-	font-weight: bold;
+    margin-bottom: 15px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    color: #333333;
 }
- 
-p, ul, ol {
-	margin-bottom: 15px;
-	line-height: 1.6em;
+
+h1 {
+    font-size: 197%;
 }
- 
-ul, ol {
-	margin-left: 2em;
+
+h2 {
+    font-size: 152%;
 }
- 
+
+h3 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+p,
+ul,
+ol {
+    margin-bottom: 15px;
+    line-height: 1.6em;
+}
+
+ul,
+ol {
+    margin-left: 2em;
+}
+
 blockquote {
-	margin-left: 1em;
-	padding-left: 1em;
-	
-	font-style: italic;
+    margin-left: 1em;
+    padding-left: 1em;
+    font-style: italic;
 }
- 
+
 a:link {
-	color: #0AAAFD;
+    color: #0AAAFD;
 }
- 
-a:hover, a:active {
-	text-decoration: none;
-	color: #bb8bab;
+
+a:hover,
+a:active {
+    text-decoration: none;
+    color: #bb8bab;
 }
- 
+
 a:visited {
-	color: #7F7772;
+    color: #7F7772;
 }
- 
+
 img {
-	border: none;
+    border: none;
 }
- 
+
 img.left {
-	float: left;
-	margin: 0 20px 0 0;
+    float: left;
+    margin: 0 20px 0 0;
 }
- 
+
 img.right {
-	float: right;
-	margin: 0 0 0 20px;
+    float: right;
+    margin: 0 0 0 20px;
 }
- 
+
+
 /* Menu */
- 
+
 #menu {
-	width: 770px;
-	height: 105px;
-	margin: 0 auto;
+    width: 770px;
+    height: 105px;
+    margin: 0 auto;
 }
- 
+
 #menu ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
- 
+
 #menu li {
-	display: block;
-	float: left;
-	width: 122px;
-	height: 65px;
-	padding: 40px 0 0 0;
+    display: block;
+    float: left;
+    width: 122px;
+    height: 65px;
+    padding: 40px 0 0 0;
 }
- 
+
 #menu a {
-	/*üst menu*/
-	display: block;
-	width: 122px;
-	height: 32px;
-	padding: 13px 0 0 0;
-	background: #be3489;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-weight: bold;
-	color: #FFFFFF;
+    /*üst menu*/
+    display: block;
+    width: 122px;
+    height: 32px;
+    padding: 13px 0 0 0;
+    background: #be3489;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
 }
- 
+
 #menu a:hover {
-	/*üst menude mousla dokununca degısen renk*/
-	background: #800a58;
+    /*üst menude mousla dokununca degısen renk*/
+    background: #800a58;
 }
- 
+
 #menu .active {
-	padding-top: 35px;
+    padding-top: 35px;
 }
- 
+
 #menu .active a {
-	/*üst menu anasayfa yazısı ıcın*/
-	height: 37px;
-	padding-top: 16px;
-	background: #be3489;
-	color: #d1dd2a;
+    /*üst menu anasayfa yazısı ıcın*/
+    height: 37px;
+    padding-top: 16px;
+    background: #be3489;
+    color: #d1dd2a;
 }
- 
+
 #menu .active a:hover {
-	/*üst menude mousla dokununca degısen renk anasayyfa yazısı ıcın*/
-	background: #800a58;
+    /*üst menude mousla dokununca degısen renk anasayyfa yazısı ıcın*/
+    background: #800a58;
 }
- 
+
+
 /* Header */
- 
+
 #header {
-	width: 770px;
-	height: 160px;
-	margin: 0 auto;
+    width: 770px;
+    margin: 0 auto;
 }
- 
+
+
 /* Logo */
- 
+
 #logo {
-	/* logo kenarları*/
-	float: left;
-	width: 250px;
-	height: 160px;
-	background:  #ffffff;
-	
+    /* logo kenarları*/
+    float: left;
+    width: 250px;
+    height: 160px;
+    background: #ffffff;
+    margin-right: 10px;
 }
- 
-#logo h1, #logo h2 {
-	text-align: center;
-	
-}
- 
-#logo h1 {
-	/* logo*/
-	padding-top: 80px;
-	background:  url(be.png) no-repeat ;
-	letter-spacing: 5px;
-	font-size: 197%;
-	font-family: "Trebuchet MS";
-}
- 
+
+#logo h1,
 #logo h2 {
-	letter-spacing: 1px;
-	font-size: 85%;
+    text-align: center;
 }
- 
+
+#logo h1 {
+    /* logo*/
+    padding-top: 80px;
+    background: url(be.png) no-repeat;
+    letter-spacing: 5px;
+    font-size: 197%;
+    font-family: "Trebuchet MS";
+}
+
+#logo h2 {
+    letter-spacing: 1px;
+    font-size: 85%;
+}
+
 #logo a {
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #FFFFFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFFFFF;
 }
- 
+
+
 /* Banner */
- 
 
- 
+
 /* Page */
- 
-#page {
-	width: 760px;
-	margin: 0 auto;
-	padding: 20px 0 0 0;
-}
- 
-/* Content */
- 
-#content {
-	float: right;
-	width: 510px;
-}
- 
-.post {
-	margin-bottom: 20px;
-}
- 
-.post .title {
-	padding: 0 20px;
-}
- 
-.post .story {
-	padding: 0 20px;
-}
- 
-.post .meta {
-	padding: 5px 20px;
-	background: url(bb.jpg) repeat-x;
-}
- 
-.post .meta p {
-	margin: 0;
-	font-size: 77%;
-}
- 
-.boxed .title {
-	height: 32px;
-	margin: 0;
-	padding: 8px 0 0 20px;
-	background: url(bb.jpg) no-repeat;
-	letter-spacing: -1px;
-	color: #5a123c;
-}
- 
-.boxed .story {
-	padding: 20px;
-	border: 1px solid #5e0e50;
-}
- 
-.boxed .meta {
-	/* posted of february yazan*/
-	padding: 5px 10px;
-	background: #be3489;
-	color: #FFFFFF;
-}
- 
-.boxed .meta a {
-	color: #FFFFFF;
-}
- 
-/* Sidebar */
- 
-#sidebar {
-	float: left;
-	width: 240px;
-}
- 
-#sidebar ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
- 
-#sidebar li {
-	margin-bottom: 15px;
-}
- 
-#sidebar li ul {
-	padding: 10px;
-	border: 1px solid #0AAAFD;
-	border-top: none;
-}
- 
-#sidebar li li {
-	margin: 0;
-	padding: 3px 0;
-	background: url(bb.jpg) repeat-x;
-}
- 
-#sidebar li li.first {
-	background: none;
-}
- 
-#sidebar li h2 {
-	height: 30px;
-	margin: 0;
-	padding: 10px 0 0 15px;
-	background: url(aa.jpg) no-repeat;
-	letter-spacing: -1px;
-	color: #327EBE;
-}
- 
-#sidebar a:link {
-	text-decoration: none;
-}
- 
-#sidebar a:hover {
-	text-decoration: underline;
-}
- 
-#sidebar li a {
-	padding-left: 10px;
-	background: url(aa.jpg) no-repeat left center;
-}
- 
 
- 
+#page {
+    width: 760px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+
+/* Content */
+
+#content {
+    float: right;
+    width: 510px;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.post .title {
+    padding: 0 20px;
+}
+
+.post .story {
+    padding: 0 20px;
+}
+
+.post .meta {
+    padding: 5px 20px;
+    background: url(bb.jpg) repeat-x;
+}
+
+.post .meta p {
+    margin: 0;
+    font-size: 77%;
+}
+
+.boxed .title {
+    height: 32px;
+    margin: 0;
+    padding: 8px 0 0 20px;
+    background: url(bb.jpg) no-repeat;
+    letter-spacing: -1px;
+    color: #5a123c;
+}
+
+.boxed .story {
+    padding: 20px;
+    border: 1px solid #5e0e50;
+}
+
+.boxed .meta {
+    /* posted of february yazan*/
+    padding: 5px 10px;
+    background: #be3489;
+    color: #FFFFFF;
+}
+
+.boxed .meta a {
+    color: #FFFFFF;
+}
+
+
+/* Sidebar */
+
+#sidebar {
+    float: left;
+    width: 240px;
+}
+
+#sidebar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar li {
+    margin-bottom: 15px;
+}
+
+#sidebar li ul {
+    padding: 10px;
+    border: 1px solid #0AAAFD;
+    border-top: none;
+}
+
+#sidebar li li {
+    margin: 0;
+    padding: 3px 0;
+    background: url(bb.jpg) repeat-x;
+}
+
+#sidebar li li.first {
+    background: none;
+}
+
+#sidebar li h2 {
+    height: 30px;
+    margin: 0;
+    padding: 10px 0 0 15px;
+    background: url(aa.jpg) no-repeat;
+    letter-spacing: -1px;
+    color: #327EBE;
+}
+
+#sidebar a:link {
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+#sidebar li a {
+    padding-left: 10px;
+    background: url(aa.jpg) no-repeat left center;
+}
+
+.login button {
+    padding: 5px 30px;
+    width: 250px;
+    margin-bottom: 10px;
+    background: #be3489;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: none;
+}
+
+.login button:hover {
+    cursor: pointer;
+}
+
+.login button:active {
+    background-color: #800a58;
+    color: #d1dd2a;
+}
