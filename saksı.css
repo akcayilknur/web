@@ -255,9 +255,16 @@ img.right {
     text-decoration: none;
     color: #FFFFFF;
 }
-button{
-    background-color:  pink;
-    color:#2d3436;
-    font-size:1.5em;
-    
-    border-radius: 5px;
+
+button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #b15679;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size:1em;
+  }
+  
