@@ -301,25 +301,3 @@ img.right {
     padding-left: 10px;
     background: url(aa.jpg) no-repeat left center;
 }
-
-.login button {
-    padding: 5px 30px;
-    width: 250px;
-    margin-bottom: 10px;
-    background: #be3489;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    color: #FFFFFF;
-    border: none;
-}
-
-.login button:hover {
-    cursor: pointer;
-}
-
-.login button:active {
-    background-color: #800a58;
-    color: #d1dd2a;
-}
