@@ -235,4 +235,14 @@ img.right {
       color: rgb(255, 0, 170);
   }
   
+  .logoutLblPos{
+
+    position:relative;
+    left:60px;
+    top:145px;
+
+ 
+ }
+
+ 
   

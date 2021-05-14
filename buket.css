@@ -271,3 +271,13 @@ button {
   button:hover {
     cursor: pointer;
 }
+.logoutLblPos{
+
+    position:relative;
+    left:60px;
+    top:145px;
+
+ 
+ }
+
+ 

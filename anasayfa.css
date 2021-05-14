@@ -301,3 +301,13 @@ img.right {
     padding-left: 10px;
     background: url(aa.jpg) no-repeat left center;
 }
+.logoutLblPos{
+
+    position:relative;
+    left:60px;
+    top:145px;
+
+ 
+ }
+
+ 
