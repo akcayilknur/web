@@ -79,7 +79,7 @@ img.right {
 /* Menu */
 
 #menu {
-    width: 770px;
+    width: 854px;
     height: 105px;
     margin: 0 auto;
 }
@@ -301,13 +301,9 @@ img.right {
     padding-left: 10px;
     background: url(aa.jpg) no-repeat left center;
 }
-.logoutLblPos{
 
-    position:relative;
-    left:60px;
-    top:145px;
-
- 
- }
-
- 
+.logoutLblPos {
+    position: relative;
+    left: 60px;
+    top: 145px;
+}

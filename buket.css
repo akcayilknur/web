@@ -155,7 +155,7 @@ img.right {
 /* Menu */
 
 #menu {
-    width: 770px;
+    width: 854px;
     height: 105px;
     margin: 0 auto;
 }
@@ -265,19 +265,15 @@ button {
     text-align: center;
     cursor: pointer;
     width: 100%;
-    font-size:1em;
-    
-  }
-  button:hover {
+    font-size: 1em;
+}
+
+button:hover {
     cursor: pointer;
 }
-.logoutLblPos{
 
-    position:relative;
-    left:60px;
-    top:145px;
-
- 
- }
-
- 
+.logoutLblPos {
+    position: relative;
+    left: 60px;
+    top: 145px;
+}
