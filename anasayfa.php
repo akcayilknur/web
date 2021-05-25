@@ -15,13 +15,13 @@
     <div id="menu">
 
         <ul>
-            <li class="active"><a href="anasayfa.html" accesskey="1" title="">Main menu</a></li>
-            <li><a href="saksı.html" accesskey="2" title="">Potted Plant</a></li>
-            <li><a href="buket.html" accesskey="3" title="">Bouquet</a></li>
-            <li><a href="teraryum.html" accesskey="4" title="">Terrarıum</a></li>
-            <li><a href="aboutus.html" accesskey="5" title="">About us</a></li>
-            <li><a href="contact.html" accesskey="6" title="">Contact</a></li>
-            <li><a href="login.html" accesskey="7" title="">Log Out</a></li>
+            <li class="active"><a href="anasayfa.php" accesskey="1" title="">Main menu</a></li>
+            <li><a href="saksı.php" accesskey="2" title="">Potted Plant</a></li>
+            <li><a href="buket.php" accesskey="3" title="">Bouquet</a></li>
+            <li><a href="teraryum.php" accesskey="4" title="">Terrarıum</a></li>
+            <li><a href="aboutus.php" accesskey="5" title="">About us</a></li>
+            <li><a href="contact.php" accesskey="6" title="">Contact</a></li>
+            <li><a href="logout.php" accesskey="7" title="">Log Out</a></li>
 
         </ul>
 

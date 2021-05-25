@@ -12,13 +12,13 @@
 
     <div id="menu">
         <ul>
-            <li><a href="anasayfa.html" accesskey="1" title="">Main menu</a></li>
-            <li><a href="saksı.html" accesskey="2" title="">Potted Plant</a></li>
-            <li class="active"><a href="buket.html" accesskey="3" title="">Bouquet</a></li>
-            <li><a href="teraryum.html" accesskey="4" title="">Terrarıum</a></li>
-            <li><a href="aboutus.html" accesskey="5" title="">About us</a></li>
-            <li><a href="contact.html" accesskey="6" title="">Contact</a></li>
-            <li><a href="login.html" accesskey="7" title="">Log Out</a></li>
+            <li><a href="anasayfa.php" accesskey="1" title="">Main menu</a></li>
+            <li><a href="saksı.php" accesskey="2" title="">Potted Plant</a></li>
+            <li class="active"><a href="buket.php" accesskey="3" title="">Bouquet</a></li>
+            <li><a href="teraryum.php" accesskey="4" title="">Terrarıum</a></li>
+            <li><a href="aboutus.php" accesskey="5" title="">About us</a></li>
+            <li><a href="contact.php" accesskey="6" title="">Contact</a></li>
+            <li><a href="logout.php" accesskey="7" title="">Log Out</a></li>
         </ul>
     </div>
     <!-- end #menu -->
@@ -46,7 +46,7 @@
                 <div class="content">
                     <img src="buket/buket1.png" alt="Lights" style="width:100%">
                     <h3>A New Day</h3>
-                    <center><button onclick="window.location.href = 'PC-bouquet-1.html';">Browse</button></center>
+                    <center><button onclick="window.location.href = 'PC-bouquet-1.php';">Browse</button></center>
                 </div>
             </div>
 

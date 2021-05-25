@@ -13,12 +13,13 @@
 <body>
     <div id="menu">
         <ul>
-            <li><a href="anasayfa.html" accesskey="1" title="">Main menu</a></li>
-            <li><a href="saksı.html" accesskey="2" title="">Potted Plant</a></li>
-            <li><a href="buket.html" accesskey="3" title="">Bouquet</a></li>
-            <li><a href="teraryum.html" accesskey="4" title="">Terrarıum</a></li>
-            <li><a href="aboutus.html" accesskey="5" title="">About Us</a></li>
-            <li><a href="#" accesskey="6" title="">Contact</a></li>
+            <li><a href="anasayfa.php" accesskey="1" title="">Main menu</a></li>
+            <li><a href="saksı.php" accesskey="2" title="">Potted Plant</a></li>
+            <li><a href="buket.php" accesskey="3" title="">Bouquet</a></li>
+            <li><a href="teraryum.php" accesskey="4" title="">Terrarıum</a></li>
+            <li><a href="aboutus.php" accesskey="5" title="">About Us</a></li>
+            <li><a href="contact.php" accesskey="6" title="">Contact</a></li>
+            <li><a href="logout.php" accesskey="7" title="">Log Out</a></li>
         </ul>
     </div>
     <!-- end #menu -->
@@ -45,12 +46,11 @@
 
             <div class="card">
 
-                <img src="saksı/saksı1.png" alt="Winter garden" style="width:100%">
-                <h1>Winter garden</h1>
-                <p class="price">$19.99</p>
-                <p>Potted color:Brown </p>
-                <p>Potted type:Ceramic </p>
-                <p><a href="payment.html"><button>Buy</button></a></p>
+                <img src="teraryum/t1.png" alt="Love of music" style="width:100%">
+                <h1>Love of music</h1>
+                <p class="price">$39.99</p>
+                <p>Terarrium shape is circular </p>
+                <p><a href="payment.php"><button>Buy</button></a></p>
             </div>
 
         </div>

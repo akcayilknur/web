@@ -1,17 +1,17 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    margin-right:100px;
+    margin-right: 100px;
     text-align: center;
     font-family: arial;
-  }
-  
-  .price {
+}
+
+.price {
     color: grey;
     font-size: 22px;
-  }
-  
-  .card button {
+}
+
+.card button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -21,12 +21,13 @@
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-  }
-  
-  .card button:hover {
+}
+
+.card button:hover {
     opacity: 0.7;
-  }
-  body {
+}
+
+body {
     background: #FFFFFF url(lale.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -107,7 +108,7 @@ img.right {
 /* Menu */
 
 #menu {
-    width: 770px;
+    width: 854px;
     height: 105px;
     margin: 0 auto;
 }
@@ -272,82 +273,4 @@ img.right {
 
 .boxed .meta a {
     color: #FFFFFF;
-}
-
-
-/* Sidebar */
-
-#sidebar {
-    float: left;
-    width: 240px;
-}
-
-#sidebar ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#sidebar li {
-    margin-bottom: 15px;
-}
-
-#sidebar li ul {
-    padding: 10px;
-    border: 1px solid #0AAAFD;
-    border-top: none;
-}
-
-#sidebar li li {
-    margin: 0;
-    padding: 3px 0;
-    background: url(bb.jpg) repeat-x;
-}
-
-#sidebar li li.first {
-    background: none;
-}
-
-#sidebar li h2 {
-    height: 30px;
-    margin: 0;
-    padding: 10px 0 0 15px;
-    background: url(aa.jpg) no-repeat;
-    letter-spacing: -1px;
-    color: #327EBE;
-}
-
-#sidebar a:link {
-    text-decoration: none;
-}
-
-#sidebar a:hover {
-    text-decoration: underline;
-}
-
-#sidebar li a {
-    padding-left: 10px;
-    background: url(aa.jpg) no-repeat left center;
-}
-
-.login button {
-    padding: 5px 30px;
-    width: 250px;
-    margin-bottom: 10px;
-    background: #be3489;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    color: #FFFFFF;
-    border: none;
-}
-
-.login button:hover {
-    cursor: pointer;
-}
-
-.login button:active {
-    background-color: #800a58;
-    color: #d1dd2a;
 }
