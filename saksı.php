@@ -1,3 +1,13 @@
+<?php
+// Include the database configuration file
+include 'config.php';
+$conn = OpenCon();
+
+?>
+
+
+
+
 <html>
 
 <head>
@@ -37,105 +47,82 @@
         <br>
         <h1> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; POTTED PLANT</h1>
 
-
         <div class="row">
             <div class="column">
             </div>
+<?php
+        // Get images from the database
+$query = $conn->query("SELECT * FROM potted_plant LIMIT 0,3");
 
+if($query->num_rows > 0){
+    while($row = $query->fetch_assoc()){
+        $imageURL = 'saksı/'.$row["picture"];
+?>
             <div class="column">
                 <div class="content">
-                    <img src="saksı/saksı1.png" alt="Lights" style="width:100%">
-                    <h3>Winter garden</h3>
-                    <center><button onclick="window.location.href = 'PC-pottedplant-1.php';">Browse</button></center>
+                    <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
+                    <h3><?php echo $row['flower_name']; ?></h3>
+                    <button onclick="window.location.href = 'PC-pottedplant-1.php';">Browse</button>
 
                 </div>
             </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="saksı/saksı2.png" alt="Nature" style="width:100%">
-                    <h3>Cold day</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="saksı/saksı3.png" alt="Mountains" style="width:100%">
-                    <h3>Rainforest</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="saksı/saksı4.png" alt="Lights" style="width:100%">
-                    <h3>Christmas</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="saksı/saksı5.png" alt="Nature" style="width:100%">
-                    <h3>Pink dream</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="saksı/saksı6.png" alt="Mountains" style="width:100%">
-                    <h3>Bridal</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-
-                </div>
-            </div>
+<?php }
+}else{ ?>
+    <!-- <p>No image(s) found...</p> -->
+<?php } ?>
         </div>
 
         <div class="row">
             <div class="column">
             </div>
+<?php
+        // Get images from the database
+$query = $conn->query("SELECT * FROM potted_plant LIMIT 3,3");
 
+if($query->num_rows > 0){
+    while($row = $query->fetch_assoc()){
+        $imageURL = 'saksı/'.$row["picture"];
+?>
             <div class="column">
                 <div class="content">
-                    <img src="saksı/buket7.png" alt="Lights" style="width:100%">
-                    <h3>Rose garden</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
+                    <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
+                    <h3><?php echo $row['flower_name']; ?></h3>
+                    <button onclick="window.location.href = 'PC-pottedplant-1.php';">Browse</button>
 
                 </div>
             </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="saksı/saksı8.png" alt="Nature" style="width:100%">
-                    <h3> Flamingo Flower</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="saksı/saksı9.png" alt="Mountains" style="width:100%">
-                    <h3>Soft beauty</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-
-                </div>
-            </div>
-
+<?php }
+}else{ ?>
+    <!-- <p>No image(s) found...</p> -->
+<?php } ?>
         </div>
 
+        <div class="row">
+            <div class="column">
+            </div>
+<?php
+        // Get images from the database
+$query = $conn->query("SELECT * FROM potted_plant LIMIT 6,3");
 
+if($query->num_rows > 0){
+    while($row = $query->fetch_assoc()){
+        $imageURL = 'saksı/'.$row["picture"];
+?>
+            <div class="column">
+                <div class="content">
+                    <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
+                    <h3><?php echo $row['flower_name']; ?></h3>
+                    <button onclick="window.location.href = 'PC-pottedplant-1.php';">Browse</button>
 
+                </div>
+            </div>
+<?php }
+}else{ ?>
+    <!-- <p>No image(s) found...</p> -->
+<?php } ?>
+        </div>
+
+        
     </div>
 </body>
 
