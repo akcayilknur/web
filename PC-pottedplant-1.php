@@ -1,3 +1,16 @@
+<?php
+include 'config.php';
+$conn = OpenCon();
+
+session_start();
+
+$sql="SELECT * FROM ".$_GET["flower"]." WHERE id = ".$_GET["flower_id"]."";
+    $query = mysqli_query($conn, $sql);
+    $result = mysqli_fetch_array($query);
+    $imageURL = 'saksı/'.$result["picture"];
+?>
+
+
 <html>
 
 <head>
@@ -40,17 +53,15 @@
         <div id="content">
             <div class="post">
                 <h1> &emsp;&emsp;PRODUCT CARD</h1>
-
-
             </div>
 
             <div class="card">
 
-                <img src="saksı/saksı1.png" alt="Winter garden" style="width:100%">
-                <h1>Winter garden</h1>
-                <p class="price">$19.99</p>
-                <p>Potted color:Brown </p>
-                <p>Potted type:Ceramic </p>
+                <img src="<?php echo $imageURL; ?>" alt="<?php echo $result['flower_name']; ?>" style="width:100%">
+                <h1><?php echo $result['flower_name']; ?></h1>
+                <p class="price"><?php echo $result['price']; ?></p>
+                <p>Pot Color: <?php echo $result['pot_color']; ?></p>
+                <p>Pot Type: <?php echo $result['pot_type']; ?></p>
                 <p><a href="payment.php"><button>Buy</button></a></p>
             </div>
 

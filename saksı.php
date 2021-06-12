@@ -3,6 +3,9 @@
 include 'config.php';
 $conn = OpenCon();
 
+$flower='potted_plant';
+
+session_start();
 ?>
 
 
@@ -62,7 +65,7 @@ if($query->num_rows > 0){
                 <div class="content">
                     <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
                     <h3><?php echo $row['flower_name']; ?></h3>
-                    <button onclick="window.location.href = 'PC-pottedplant-1.php';">Browse</button>
+                    <a href="PC-pottedplant-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
 
                 </div>
             </div>
@@ -87,7 +90,7 @@ if($query->num_rows > 0){
                 <div class="content">
                     <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
                     <h3><?php echo $row['flower_name']; ?></h3>
-                    <button onclick="window.location.href = 'PC-pottedplant-1.php';">Browse</button>
+                    <a href="PC-pottedplant-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
 
                 </div>
             </div>
@@ -112,7 +115,7 @@ if($query->num_rows > 0){
                 <div class="content">
                     <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
                     <h3><?php echo $row['flower_name']; ?></h3>
-                    <button onclick="window.location.href = 'PC-pottedplant-1.php';">Browse</button>
+                    <a href="PC-pottedplant-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
 
                 </div>
             </div>

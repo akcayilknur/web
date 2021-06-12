@@ -114,7 +114,7 @@
 
             <div class="column">
                 <div class="content">
-                    <img src="buket/buket 9.png" alt="Mountains" style="width:100%">
+                    <img src="buket/buket9.png" alt="Mountains" style="width:100%">
                     <h3>Pink perfection</h3>
                     <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
                 </div>

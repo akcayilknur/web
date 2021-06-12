@@ -9,8 +9,6 @@ if (isset($_POST['submit'])) {
         $tel = $_POST['tel'];
         $password = $_POST['password'];
         
-
-
         $host = "localhost";
         $dbUsername = "root";
         $dbPassword = "";

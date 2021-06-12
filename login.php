@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // If result matched $email and $password, table row must be 1 row
         if ($count == 1) {
-            $_SESSION['email'] = $email;
+            $_SESSION['customer_id'] = $id;
             header("location: http://localhost/web/anasayfa.php");
         } else {
             $errors['check'] = "E-mail or password is invalid.";
