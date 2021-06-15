@@ -1,3 +1,17 @@
+<?php
+include 'config.php';
+$conn = OpenCon();
+
+session_start();
+
+$sql="SELECT * FROM ".$_GET["flower"]." WHERE id = ".$_GET["flower_id"]."";
+    $query = mysqli_query($conn, $sql);
+    $result = mysqli_fetch_array($query);
+    $imageURL = 'buket/'.$result["picture"];
+?>
+
+
+
 <html>
 
 <head>
@@ -35,21 +49,18 @@
     </div>
     <!-- end #header -->
 
-
     <div id="page">
         <div id="content">
             <div class="post">
                 <h1> &emsp;&emsp;PRODUCT CARD</h1>
-
-
             </div>
 
             <div class="card">
 
-                <img src="buket/buket1.png" alt="A New Day" style="width:100%">
-                <h1>A New Day</h1>
-                <p class="price">$19.99</p>
-                <p>Contains 10 pieces </p>
+                <img src="<?php echo $imageURL; ?>" alt="<?php echo $result['flower_name']; ?>" style="width:100%">
+                <h1><?php echo $result['flower_name']; ?></h1>
+                <p class="price"><?php echo $result['price']; ?></p>
+                <p>Contains flower amount: <?php echo $result['flower_amount']; ?></p>
                 <p><a href="payment.php"><button>Buy</button></a></p>
             </div>
 

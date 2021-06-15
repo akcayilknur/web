@@ -1,3 +1,19 @@
+<?php
+// Include the database configuration file
+include 'config.php';
+$conn = OpenCon();
+
+$flower='bouquet';
+
+session_start();
+?>
+
+
+
+
+
+
+
 <html>
 
 <head>
@@ -42,88 +58,80 @@
             <div class="column">
             </div>
 
-            <div class="column">
-                <div class="content">
-                    <img src="buket/buket1.png" alt="Lights" style="width:100%">
-                    <h3>A New Day</h3>
-                    <center><button onclick="window.location.href = 'PC-bouquet-1.php';">Browse</button></center>
-                </div>
-            </div>
+            <?php
+        // Get images from the database
+$query = $conn->query("SELECT * FROM bouquet LIMIT 0,3");
+
+if($query->num_rows > 0){
+    while($row = $query->fetch_assoc()){
+        $imageURL = 'buket/'.$row["picture"];
+?>
 
             <div class="column">
                 <div class="content">
-                    <img src="buket/buket2.png" alt="Nature" style="width:100%">
-                    <h3>Pretty in pink</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-                </div>
-            </div>
+                <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
+                    <h3><?php echo $row['flower_name']; ?></h3>
+                    <a href="PC-bouquet-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
 
-            <div class="column">
-                <div class="content">
-                    <img src="buket/buket3.png" alt="Mountains" style="width:100%">
-                    <h3>Happiness</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
                 </div>
             </div>
-            <div class="column">
-
-            </div>
-            <div class="column">
-                <div class="content">
-                    <img src="buket/buket4.png" alt="Lights" style="width:100%">
-                    <h3>Felicity</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="buket/buket5.png" alt="Nature" style="width:100%">
-                    <h3>Cool Breeze</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="buket/buket6.png" alt="Mountains" style="width:100%">
-                    <h3>Rainforest fresh</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-                </div>
-            </div>
+<?php }
+}else{ ?>
+    <!-- <p>No image(s) found...</p> -->
+<?php } ?>
         </div>
+
         <div class="row">
             <div class="column">
             </div>
+<?php
+        // Get images from the database
+$query = $conn->query("SELECT * FROM bouquet LIMIT 3,3");
 
-            <div class="column">
+if($query->num_rows > 0){
+    while($row = $query->fetch_assoc()){
+        $imageURL = 'buket/'.$row["picture"];
+?>
+<div class="column">
                 <div class="content">
-                    <img src="buket/buket7.png" alt="Lights" style="width:100%">
-                    <h3>Colour burst</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
+                    <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
+                    <h3><?php echo $row['flower_name']; ?></h3>
+                    <a href="PC-bouquet-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
+
                 </div>
             </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="buket/buket8.png" alt="Nature" style="width:100%">
-                    <h3> Sunrise</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-                </div>
-            </div>
-
-            <div class="column">
-                <div class="content">
-                    <img src="buket/buket9.png" alt="Mountains" style="width:100%">
-                    <h3>Pink perfection</h3>
-                    <center><button onclick="window.location.href = 'https://www.google.com';">Browse</button></center>
-                </div>
-            </div>
-
+<?php }
+}else{ ?>
+    <!-- <p>No image(s) found...</p> -->
+<?php } ?>
         </div>
 
+        <div class="row">
+            <div class="column">
+            </div>
+<?php
+        // Get images from the database
+$query = $conn->query("SELECT * FROM bouquet LIMIT 6,3");
 
+if($query->num_rows > 0){
+    while($row = $query->fetch_assoc()){
+        $imageURL = 'buket/'.$row["picture"];
+?>
+            <div class="column">
+                <div class="content">
+                    <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
+                    <h3><?php echo $row['flower_name']; ?></h3>
+                    <a href="PC-bouquet-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
 
+                </div>
+            </div>
+<?php }
+}else{ ?>
+    <!-- <p>No image(s) found...</p> -->
+<?php } ?>
+        </div>
+
+        
     </div>
 </body>
 
