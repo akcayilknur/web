@@ -6,8 +6,12 @@ $conn = OpenCon();
 
 $errors = [];
 
+$table1 = "CREATE TABLE flowers(
+    name VARCHAR(30),
+    PRIMARY KEY (name));";
 
-$table1 = "CREATE TABLE bouquet( 
+
+$table2 = "CREATE TABLE bouquet( 
     id INT(11) NOT NULL AUTO_INCREMENT,
     flower_name VARCHAR(30), 
     price VARCHAR(20), 
@@ -17,18 +21,24 @@ $table1 = "CREATE TABLE bouquet(
     FOREIGN KEY (flower_name) REFERENCES flowers(name));";
 
 
-$table2 = "CREATE TABLE flowers(
-    name VARCHAR(30),
-    PRIMARY KEY (name));";
+
+$table3 = "CREATE TABLE user_register(
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    name VARCHAR(20),
+    email VARCHAR(20),
+    tel BIGINT(20),
+    password VARCHAR(20),
+    PRIMARY KEY (id);";
 
 
-$table3 = "CREATE TABLE orders ( 
+$table4 = "CREATE TABLE orders ( 
     order_id INT(11) NOT NULL AUTO_INCREMENT, 
     customer_id INT(11),
     flower_name VARCHAR(30), 
     order_time DATETIME(6), 
     receiver_name VARCHAR(20), 
-    delivery_time DATETIME(6),
+    delivery_date DATE,
+    delivery_time TIME(6),
     message VARCHAR(100),
     credit_cart INT(16),
     total VARCHAR(20),
@@ -37,7 +47,7 @@ $table3 = "CREATE TABLE orders (
     FOREIGN KEY (flower_name) REFERENCES flowers(name));";
 
 
-$table4 = "CREATE TABLE potted_plant(  
+$table5 = "CREATE TABLE potted_plant(  
     id INT(11) NOT NULL AUTO_INCREMENT,
     flower_name VARCHAR(30), 
     price VARCHAR(20), 
@@ -48,7 +58,7 @@ $table4 = "CREATE TABLE potted_plant(
     FOREIGN KEY (flower_name) REFERENCES flowers(name));";
 
 
-$table5 = "CREATE TABLE terrarium(  
+$table6 = "CREATE TABLE terrarium(  
     id INT(11) NOT NULL AUTO_INCREMENT,
     flower_name VARCHAR(30), 
     price VARCHAR(20), 
@@ -58,13 +68,6 @@ $table5 = "CREATE TABLE terrarium(
     FOREIGN KEY (flower_name) REFERENCES flowers(name));";
 
 
-$table6 = "CREATE TABLE user_register(
-        id INT(11) NOT NULL AUTO_INCREMENT,
-        name VARCHAR(20),
-        email VARCHAR(20),
-        tel BIGINT(20),
-        password VARCHAR(20),
-        PRIMARY KEY (id);";
 
 
 $tables = [$table1, $table2, $table3, $table4, $table5, $table6];
