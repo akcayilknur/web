@@ -28,7 +28,7 @@ $table3 = "CREATE TABLE user_register(
     email VARCHAR(20),
     tel BIGINT(20),
     password VARCHAR(20),
-    PRIMARY KEY (id);";
+    PRIMARY KEY (id));";
 
 
 $table4 = "CREATE TABLE orders ( 
@@ -42,7 +42,7 @@ $table4 = "CREATE TABLE orders (
     message VARCHAR(100),
     credit_cart INT(16),
     total VARCHAR(20),
-    PRIMARY KEY (order_id)),
+    PRIMARY KEY (order_id),
     FOREIGN KEY (customer_id) REFERENCES user_register(id),
     FOREIGN KEY (flower_name) REFERENCES flowers(name));";
 
