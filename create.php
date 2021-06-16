@@ -40,7 +40,7 @@ $table4 = "CREATE TABLE orders (
     delivery_date DATE,
     delivery_time TIME(6),
     message VARCHAR(100),
-    credit_cart INT(16),
+    credit_cart VARCHAR(16),
     total VARCHAR(20),
     PRIMARY KEY (order_id),
     FOREIGN KEY (customer_id) REFERENCES user_register(id),

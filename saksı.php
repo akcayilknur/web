@@ -3,7 +3,7 @@
 include 'config.php';
 $conn = OpenCon();
 
-$flower='potted_plant';
+$flower = 'potted_plant';
 
 session_start();
 ?>
@@ -53,79 +53,79 @@ session_start();
         <div class="row">
             <div class="column">
             </div>
-<?php
-        // Get images from the database
-$query = $conn->query("SELECT * FROM potted_plant LIMIT 0,3");
+            <?php
+            // Get images from the database
+            $query = $conn->query("SELECT * FROM potted_plant LIMIT 0,3");
 
-if($query->num_rows > 0){
-    while($row = $query->fetch_assoc()){
-        $imageURL = 'saksı/'.$row["picture"];
-?>
-            <div class="column">
-                <div class="content">
-                    <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
-                    <h3><?php echo $row['flower_name']; ?></h3>
-                    <a href="PC-pottedplant-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
+            if ($query->num_rows > 0) {
+                while ($row = $query->fetch_assoc()) {
+                    $imageURL = 'saksı/' . $row["picture"];
+            ?>
+                    <div class="column">
+                        <div class="content">
+                            <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
+                            <h3><?php echo $row['flower_name']; ?></h3>
+                            <a href="PC-pottedplant-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
 
-                </div>
-            </div>
-<?php }
-}else{ ?>
-    <!-- <p>No image(s) found...</p> -->
-<?php } ?>
+                        </div>
+                    </div>
+                <?php }
+            } else { ?>
+                <!-- <p>No image(s) found...</p> -->
+            <?php } ?>
         </div>
 
         <div class="row">
             <div class="column">
             </div>
-<?php
-        // Get images from the database
-$query = $conn->query("SELECT * FROM potted_plant LIMIT 3,3");
+            <?php
+            // Get images from the database
+            $query = $conn->query("SELECT * FROM potted_plant LIMIT 3,3");
 
-if($query->num_rows > 0){
-    while($row = $query->fetch_assoc()){
-        $imageURL = 'saksı/'.$row["picture"];
-?>
-            <div class="column">
-                <div class="content">
-                    <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
-                    <h3><?php echo $row['flower_name']; ?></h3>
-                    <a href="PC-pottedplant-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
+            if ($query->num_rows > 0) {
+                while ($row = $query->fetch_assoc()) {
+                    $imageURL = 'saksı/' . $row["picture"];
+            ?>
+                    <div class="column">
+                        <div class="content">
+                            <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
+                            <h3><?php echo $row['flower_name']; ?></h3>
+                            <a href="PC-pottedplant-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
 
-                </div>
-            </div>
-<?php }
-}else{ ?>
-    <!-- <p>No image(s) found...</p> -->
-<?php } ?>
+                        </div>
+                    </div>
+                <?php }
+            } else { ?>
+                <!-- <p>No image(s) found...</p> -->
+            <?php } ?>
         </div>
 
         <div class="row">
             <div class="column">
             </div>
-<?php
-        // Get images from the database
-$query = $conn->query("SELECT * FROM potted_plant LIMIT 6,3");
+            <?php
+            // Get images from the database
+            $query = $conn->query("SELECT * FROM potted_plant LIMIT 6,3");
 
-if($query->num_rows > 0){
-    while($row = $query->fetch_assoc()){
-        $imageURL = 'saksı/'.$row["picture"];
-?>
-            <div class="column">
-                <div class="content">
-                    <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
-                    <h3><?php echo $row['flower_name']; ?></h3>
-                    <a href="PC-pottedplant-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
+            if ($query->num_rows > 0) {
+                while ($row = $query->fetch_assoc()) {
+                    $imageURL = 'saksı/' . $row["picture"];
+            ?>
+                    <div class="column">
+                        <div class="content">
+                            <img src="<?php echo $imageURL; ?>" alt="Lights" style="width:100%">
+                            <h3><?php echo $row['flower_name']; ?></h3>
+                            <a href="PC-pottedplant-1.php?flower=<?php echo $flower; ?>&flower_id=<?php echo $row['id']; ?>"><button>Browse</button></a>
 
-                </div>
-            </div>
-<?php }
-}else{ ?>
-    <!-- <p>No image(s) found...</p> -->
-<?php } ?>
+                        </div>
+                    </div>
+                <?php }
+            } else { ?>
+                <!-- <p>No image(s) found...</p> -->
+            <?php } ?>
         </div>
 
-        
+
     </div>
 </body>
 

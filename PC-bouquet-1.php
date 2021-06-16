@@ -8,6 +8,9 @@ $sql="SELECT * FROM ".$_GET["flower"]." WHERE id = ".$_GET["flower_id"]."";
     $query = mysqli_query($conn, $sql);
     $result = mysqli_fetch_array($query);
     $imageURL = 'buket/'.$result["picture"];
+
+    $_SESSION['flower_id'] = $result["id"];
+    $_SESSION['flower'] = $_GET["flower"];
 ?>
 
 
@@ -59,7 +62,7 @@ $sql="SELECT * FROM ".$_GET["flower"]." WHERE id = ".$_GET["flower_id"]."";
 
                 <img src="<?php echo $imageURL; ?>" alt="<?php echo $result['flower_name']; ?>" style="width:100%">
                 <h1><?php echo $result['flower_name']; ?></h1>
-                <p class="price"><?php echo $result['price']; ?></p>
+                <p class="price"><?php echo $result['price']; ?>₺</p>
                 <p>Contains flower amount: <?php echo $result['flower_amount']; ?></p>
                 <p><a href="payment.php"><button>Buy</button></a></p>
             </div>
