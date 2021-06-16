@@ -1,3 +1,15 @@
+<?php
+include 'config.php';
+$conn = OpenCon();
+
+session_start();
+
+$sql="SELECT * FROM ".$_GET["flower"]." WHERE id = ".$_GET["flower_id"]."";
+    $query = mysqli_query($conn, $sql);
+    $result = mysqli_fetch_array($query);
+    $imageURL = 'teraryum/'.$result["picture"];
+?>
+
 <html>
 
 <head>
@@ -40,16 +52,14 @@
         <div id="content">
             <div class="post">
                 <h1> &emsp;&emsp;PRODUCT CARD</h1>
-
-
             </div>
 
             <div class="card">
 
-                <img src="teraryum/t1.png" alt="Love of music" style="width:100%">
-                <h1>Love of music</h1>
-                <p class="price">$39.99</p>
-                <p>Terarrium shape is circular </p>
+                <img src="<?php echo $imageURL; ?>" alt="<?php echo $result['flower_name']; ?>" style="width:100%">
+                <h1><?php echo $result['flower_name']; ?></h1>
+                <p class="price"><?php echo $result['price']; ?></p>
+                <p>Pot Shape: <?php echo $result['shape']; ?></p>
                 <p><a href="payment.php"><button>Buy</button></a></p>
             </div>
 
