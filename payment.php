@@ -9,6 +9,10 @@ $sql = "SELECT * FROM " . $_SESSION["flower"] . " WHERE id = " . $_SESSION["flow
 $query = mysqli_query($conn, $sql);
 $flower = mysqli_fetch_array($query);
 
+if(empty($_SESSION['email'])){
+    echo '<script> alert("Please login first to make a purchase."); document.location="login.php" </script>';
+}
+
 $email = $_SESSION['email'];
 $sql1 = 'SELECT * FROM user_register WHERE email = "' . $email . '"';
 $query1 = mysqli_query($conn, $sql1);
@@ -23,8 +27,6 @@ $receiver_name = $address = $delivery_date = $delivery_time = $message = $credit
 $errors = array('receiver_name' => '', 'address' => '', 'delivery_date' => '', 'delivery_time' => '', 'message' => '', 'credit_card' => '');
 
 if (isset($_POST['buy'])) {
-
-
     if (empty($_POST['receiver_name'])) {
         $errors['receiver_name'] = 'Receiver\'s name is required';
     } else {
@@ -70,8 +72,11 @@ if (isset($_POST['buy'])) {
         mysqli_stmt_bind_param($statement, 'issssssss', $customer_id, $flower_name, $receiver_name, $address, $delivery_date, $delivery_time, $message, $credit_card, $total);
 
         // Execute the prepared statement
-        mysqli_stmt_execute($statement);
-        print(mysqli_stmt_error($statement) . "\n");
+        if(mysqli_stmt_execute($statement)){
+                echo '<script> alert("Your order has been taken."); document.location="payment.php" </script>';
+        }else{
+            print(mysqli_stmt_error($statement) . "\n");
+        }
 
         // Close the statement and the connection
         mysqli_stmt_close($statement);
