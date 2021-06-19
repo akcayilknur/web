@@ -18,7 +18,7 @@
             <li><a href="saksı.php" accesskey="2" title="">Potted Plant</a></li>
             <li><a href="buket.php" accesskey="3" title="">Bouquet</a></li>
             <li><a href="teraryum.php" accesskey="4" title="">Terrarıum</a></li>
-            <li> <a href="aboutus.php" accesskey="5" title="">About Us</a></li>
+            <li> <a href="myorders.php" accesskey="5" title="">My Orders</a></li>
             <li class="active"><a href="contact.php" accesskey="6" title="">Contact</a></li>
             <li><a href="logout.php" accesskey="7" title="">Log Out</a></li>
         </ul>
@@ -45,12 +45,13 @@
         <br>
         <br>
         <br>
-        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://www.facebook.com/" class="fa fa-facebook " ></a>
         <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
         <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
         <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
     </center>
 
+    
 </body>
 
 </html>
