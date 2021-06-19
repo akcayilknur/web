@@ -58,11 +58,20 @@ if (isset($_POST['buy'])) {
     $time_now = date("H:i");
     $date_now = date("Y-m-d");
 
+    $time1 = strtok($_POST['delivery_time'], ":");
+    $time2 = strtok(":");
+    $time3 = strtok($time_now, ":");
+    $time4 = strtok(":");
+    $difference = $time2 - $time4;
+
+    // Check date
     if (!empty($_POST['delivery_date']) && $date_now > $delivery_date) {
         $errors['delivery_date'] = 'Please enter a valid date';
     } else {
         if (!empty($_POST['delivery_time']) && $time_now > $delivery_time && $date_now == $delivery_date) {
             $errors['delivery_time'] = 'Please enter a valid time';
+        }else if (!empty($_POST['delivery_time']) && $difference < 30 && $date_now == $delivery_date){
+            $errors['delivery_time'] = 'Delivery time should be at least 30 minutes later than current time.';
         } 
     }
 

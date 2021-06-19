@@ -18,6 +18,7 @@ h3 {
 
 h1 {
     font-size: 197%;
+    text-shadow: 2px 2px 5px rgb(255, 0, 170);
 }
 
 h2 {
@@ -143,6 +144,7 @@ img.right {
 #logo h1,
 #logo h2 {
     text-align: center;
+    text-shadow: unset;
 }
 
 #logo h1 {
@@ -175,16 +177,15 @@ img.right {
     width: 760px;
     margin: 0 auto;
     padding: 20px 0 0 0;
+    margin-bottom: 150px;
 }
 
 
 /* Content */
 
 #content {
-    float: right;
     width: 510px;
     color: black;
-    text-shadow: 2px 2px 5px rgb(255, 0, 170);
 }
 
 .post {
@@ -195,4 +196,39 @@ img.right {
     position: relative;
     left: 60px;
     top: 145px;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: #be348954;
+}
+
+th {
+    color: #800a58;
+}
+
+th,
+td,
+tr {
+    text-align: center;
+    padding: 10px;
+    border: #be3489 solid;
+}
+
+th:first-of-type {
+    border-top-left-radius: 10px;
+}
+
+th:last-of-type {
+    border-top-right-radius: 10px;
+}
+
+tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 10px;
 }
