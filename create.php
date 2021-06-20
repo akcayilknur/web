@@ -35,7 +35,7 @@ $table4 = "CREATE TABLE orders (
     order_id INT(11) NOT NULL AUTO_INCREMENT, 
     customer_id INT(11),
     flower_name VARCHAR(30), 
-    order_time DATETIME(6), 
+    order_time DATETIME(6) NOT NULL DEFAULT CURRENT_TIMESTAMP, 
     receiver_name VARCHAR(20), 
     address VARCHAR(100),
     delivery_date DATE,

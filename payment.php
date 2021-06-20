@@ -123,7 +123,7 @@ if (isset($_POST['buy'])) {
         <div id="logo">
 
             <h1><a href="#" style="color: #be3489;">BE FLOWERS </a></h1>
-            <h2><a href="http://www.freecsstemplates.org/" style="color: #000000;"> for best day...</a></h2>
+            <h2><a href="#" style="color: #000000;"> for best day...</a></h2>
         </div>
         <div id="banner">
             <a href="#"> </a>
